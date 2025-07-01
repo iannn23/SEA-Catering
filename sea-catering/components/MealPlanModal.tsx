@@ -1,11 +1,10 @@
 "use client";
 
-// Tipe data untuk satu meal plan
 type MealPlan = {
   name: string;
   price: string;
   description: string;
-  details: string; // Detail tambahan untuk modal
+  details: string;
 };
 
 type ModalProps = {

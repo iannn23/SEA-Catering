@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -22,11 +23,18 @@ const Navbar = () => {
 
   return (
     <nav className="w-full p-6 flex justify-between items-center bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-800">
-      <h1 className="text-2xl font-bold text-white">
-        <Link href="/">
+      <Link href="/" className="flex items-center gap-3">
+        <Image
+          src="/SEA-Catering logo.png"
+          alt="SEA Catering Logo"
+          width={50}
+          height={50}
+          className="h-10 w-10"
+        />
+        <span className="text-2xl font-bold text-white">
           SEA<span className="text-cyan-400">Catering</span>
-        </Link>
-      </h1>
+        </span>
+      </Link>
 
       <div className="hidden md:flex items-center gap-8">
         {links.map((link) => {

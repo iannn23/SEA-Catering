@@ -1,13 +1,12 @@
-"use client"; // Jadikan Client Component untuk state management modal
+"use client";
 
 import { useState } from "react";
 import MealPlanModal from "@/components/MealPlanModal";
 
-// Tipe data untuk satu meal plan, pastikan konsisten
 type MealPlan = {
-  name: string; // [cite: 65]
-  price: string; // [cite: 66]
-  description: string; // [cite: 67]
+  name: string;
+  price: string;
+  description: string;
   details: string;
 };
 
@@ -55,7 +54,6 @@ export default function MenuPage() {
       <h1 className="text-5xl md:text-6xl font-bold text-center mb-12 text-white">
         Our Meal Plans
       </h1>
-      {/* Tampilan Meal Plan dengan komponen interaktif (kartu) [cite: 63] */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {mealPlans.map((plan) => (
           <div
@@ -67,7 +65,6 @@ export default function MenuPage() {
             </h2>
             <p className="text-lg text-white mb-4">{plan.price}</p>
             <p className="text-gray-400 flex-grow">{plan.description}</p>
-            {/* Tombol "See More Details" [cite: 69] */}
             <button
               onClick={() => handleOpenModal(plan)}
               className="mt-6 bg-cyan-500 text-white py-2 px-4 rounded hover:bg-cyan-600 transition-colors"
