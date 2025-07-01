@@ -1,13 +1,9 @@
 "use client";
-import Navbar from "@/components/Navbar";
 import FeatureCard from "@/components/FeatureCard";
-import Footer from "@/components/Footer";
-import { useState } from "react";
 
 export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
       <main className="flex-grow flex flex-col justify-center text-center px-6">
         <section className="py-20">
           <h2 className="text-5xl md:text-7xl font-bold leading-tight text-white">
@@ -124,8 +120,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }
