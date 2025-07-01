@@ -1,6 +1,6 @@
 # SEA-Catering
 
-Techstack yang digunakan
+#Techstack yang digunakan
 Framework: Next.js 
 Styling: Tailwind CSS
 Database: Neon (PostgreSQL Serverless)
@@ -11,13 +11,19 @@ Password Hashing: bcryptjs
 
 Pastikan memiliki Node.js (versi 18 atau lebih baru) dan npm terinstal di Device anda.
 
-
-Instalasi dan jalankan
+# Instalasi dan jalankan
+```
 git clone https://github.com/username-anda/nama-repositori-anda.git
 cd sea-catering
+```
 
-Instal Dependensi
+# Instal Dependensi
+```
 npm install
+```
 
+# Jalankan Program
+```
 npm run dev
 Buka http://localhost:3000 di browser Anda untuk melihat aplikasinya.
+```
