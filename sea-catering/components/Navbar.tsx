@@ -17,7 +17,7 @@ const Navbar = () => {
     { name: "Home", href: "/" },
     { name: "Menu / Meal Plans", href: "/menu" },
     { name: "Subscription", href: "/subscription" },
-    { name: "Contact Us", href: "/#contact" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   return (
